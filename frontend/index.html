@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafete-Ría</title>
-    <link rel="shortcut icon" href="img\osito.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/cafe.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!--Link a los iconos de FontAwesome-->
@@ -17,22 +17,22 @@
     <div class="flex flex-col sm:flex-row items-center sm:items-baseline justify-between w-full px-4 py-2">
 
         <div class="flex items-center sm:ml-4">
-            <img src="img\osito.png" alt="Cafeteria Logo" class="h-20" />
+            <img src="img/cafe.png" alt="Cafeteria Logo" class="h-20" />
             <a href="index.html" class="text-white text-2xl font-bold ml-4 sm:ml-0">CAFETE-RÍA</a>
         </div>
 
         
-        <div class="flex justify-center items-center w-full sm:w-auto">
-            <ul class="text-white text-lg font-semibold flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+        <div class="flex justify-around items-center w-full sm:w-auto">
+            <ul class="text-white text-lg font-semibold flex flex-col sm:flex-row items-center">
                 <li class="sm:order-last">
-                    <a class="fa-solid fa-user text-3xl hover:text-rose-800 hover:text-4xl transition" href="#" id="iconoUsuario"></a>
-                    <a class="fa-solid fa-cart-arrow-down text-3xl hover:text-rose-800 hover:text-4xl transition" href="#" id="iconoCarrito"></a>
+                    <a class="fa-solid fa-user text-3xl hover:text-rose-800 hover:text-4xl transition px-5" href="#" id="iconoUsuario"></a>
+                    <a class="fa-solid fa-cart-arrow-down text-3xl hover:text-rose-800 hover:text-4xl transition px-5"  href="#" id="iconoCarrito"></a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<div class="flex justify-center items-center w-full sm:w-auto m-5">
+<div class="flex justify-center items-center w-full sm:w-auto m-5 w-64">
             <ul class="text-slate-900 text-lg font-semibold flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
                 <li><a class="hover:text-rose-800 hover:text-xl transition" href="index.html">INICIO</a></li>
                 <li><a class="hover:text-rose-800 hover:text-xl transition" href="nosotros.html">NOSOTROS</a></li>
@@ -43,45 +43,88 @@
             </ul>
         </div>
 
-<div class="flex justify-center justify-between m-40 mt-8 bg-gray-300 bg-opacity-25 p-7">
-    <span class=" text-center">
-        <h2 class="text-slate-900 text-3xl font-bold ml-4 sm:ml-0 mb-2">CAFETE-RÍA</h2>
-    <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo sapiente labore tenetur ipsum voluptates, eos ducimus dolores dolorum doloremque? Et, aut alias harum voluptates asperiores mollitia aperiam minus veritatis!</p>
-    <button class="bg-rose-700 hover:bg-rose-600 text-white font-bold py-2 px-7 rounded-full center mt-7">COMPRA AL POR MAYOR</button></span>
-    <img class="h-32 sm:h-96 ml-4" src="/frontend/img/cafe1.jpg" alt="">
+<div class="flex flex-col lg:flex-row items-center lg:content-evenly  bg-gray-300 bg-opacity-25 p-5 ">
+    <span class=" text-center lg:ml-32">
+        <h2 class="text-slate-900 text-3xl lg:text-4xl  font-bold lg:ml-4 lg:ml-0 mb-2 lg:mr-12">CAFETE-RÍA</h2>
+    <p class="lg:mr-12">Ofrecemos planes mensuales que incluyen el arriendo de máquinas y suministros. Desde máquinas automáticas hasta profesionales mecánicas, tenemos lo que necesitas para tu negocio o para disfrutar en casa.
+        Compra máquinas nuevas de café, cremeras (postres) y chocolateras directamente del importador al cliente. Trabajamos con marcas reconocidas como Gaggia, Saeco, Cunill, Bunn, y West Bend.
+    </p>
+    <button class="bg-rose-700 hover:bg-rose-600 text-white font-bold py-2 px-7 rounded-full center mt-7 lg:mr-12">COMPRA AL POR MAYOR</button></span>
+    <img class="w-64 object-center lg:w-96 lg:mr-32 " src="/img/cafe1.jpg" alt="">
 </div>
 
-<footer class="flex bg-slate-950 text-white">
-    <div class="flex flex-col sm:flex-row items-center sm:items-baseline justify-between w-full px-4 py-2">
+<span>
+    <h2 class="text-slate-900 text-3xl lg:text-4xl font-bold text-center lg:mb-6 bg-gray-300 bg-opacity-20 p-9">NUESTROS PRODUCTOS DESTACADOS</h2>
+</span>
 
-        <div class="flex items-center sm:ml-4">
-            <span>
-                <img src="img\osito.png" alt="Cafeteria Logo" class="h-20" />
-                <p>Te ofrecemos asesoría, capacitación y envíos gratis.</p>
-            </span>
-
-            <span>
-                <h2>NUESTRA FILOSOFÍA</h2>
-                <p class="text-white text-sm ml-4 sm:ml-0">En Coffe Shop, somos una tienda virtual dedicada a ofrecerte las mejores marcas en máquinas, insumos y accesorios para el café. Nuestro compromiso es brindarte la mejor asesoría, envíos rápidos y capacitaciones gratuitas.</p>
-            </span>
-
-            <span>
-                <h2>NUESTRA FILOSOFÍA</h2>
-                <p class="text-white text-sm ml-4 sm:ml-0">En Coffe Shop, somos una tienda virtual dedicada a ofrecerte las mejores marcas en máquinas, insumos y accesorios para el café. Nuestro compromiso es brindarte la mejor asesoría, envíos rápidos y capacitaciones gratuitas.</p>
-            </span>
-        </div>
-
+<section class="grid grid-rows-1 lg:grid-cols-3 lg:content-evenly justify-items-center ">
         
-        <div class="flex justify-center items-center w-full sm:w-auto">
-            <ul class="text-white text-lg font-semibold flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-                <li class="sm:order-last">
-                    <a class="fa-solid fa-user text-3xl hover:text-rose-800 hover:text-4xl transition" href="#" id="iconoUsuario"></a>
-                    <a class="fa-solid fa-cart-arrow-down text-3xl hover:text-rose-800 hover:text-4xl transition" href="#" id="iconoCarrito"></a>
-                </li>
-            </ul>
-        </div>
+    <div class="flex flex-col content-evenly bg-gray-300 bg-opacity-25 p-7 rounded-xl w-96 h-auto">
+    <span class=" text-center">
+        <h2 class="text-slate-900 text-xl font-bold ml-4 lg:ml-0 mb-2">CAFÉ NESCAFÉ TRADICIONAL</h2>
+    <p class="text-sm mb-5">Cada taza de NESCAFÉ® Tradición es el resultado de una meticulosa combinación de granos de alta calidad de Arabica y Robusta, obtenidos de manera responsable. El tostado medio oscuro le otorga un sabor equilibrado y con cuerpo, lo que lo convierte en una opción deliciosamente especial para comenzar tu día con energía.</p>
+    </span>
+    <img class="object-scale-down justify-self-center" src="img/nescafe.jpeg" alt="">
+    <button class="bg-rose-700 hover:bg-rose-600 text-white font-bold py-2 px-7 rounded-full center ">AGREGAR AL CARRO</button>
     </div>
-</footer>
+
+    <div class="flex flex-col content-evenly bg-gray-300 bg-opacity-25 p-7 rounded-xl w-96 h-auto">
+    <span class=" text-center">
+        <h2 class="text-slate-900 text-xl font-bold ml-4 lg:ml-0 mb-2">MÁQUINA CAFÉ PHILLIPS</h2>
+    <p class="text-sm mb-5">La cafetera de émbolo o cafetera francesa, también conocida como prensa francesa o cafetera de pistón, consiste en un cilindro de cristal donde se coloca el café molido sobre el que se vierte el agua hirviendo. Tras remover y deja reposar unos minutos se baja el pistón o émbolo y el café queda listo para consumir. Ya no es necesario filtrar debido a que el émbolo tiene un fltro que atrapa las partículas de café.</p>
+    </span>
+    <img class="object-scale-down justify-self-center" src="img/maquinacafe.webp" alt="">
+    <button class="bg-rose-700 hover:bg-rose-600 text-white font-bold py-2 px-7 rounded-full center ">AGREGAR AL CARRO</button>
+    </div>
+
+    <div class="flex flex-col content-evenly bg-gray-300 bg-opacity-25 p-7 rounded-xl w-96 h-auto">
+    <span class=" text-center">
+        <h2 class="text-slate-900 text-xl font-bold ml-4 lg:ml-0 mb-2">CHOCOLATE LA AURORA</h2>
+    <p class="text-sm mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo sapiente labore tenetur ipsum voluptates, eos ducimus dolores dolorum doloremque? Et, aut alias harum voluptates asperiores mollitia aperiam minus veritatis!</p>
+    </span>
+    <img class="object-scale-down justify-self-center" src="img/chocolatepaquete.png" alt="">
+    <button class="bg-rose-700 hover:bg-rose-600 text-white font-bold py-2 px-7 rounded-full center ">AGREGAR AL CARRO</button>
+    </div>
+
+
+
+</section>
+
+
+
+
+<footer class="flex flex-col justify-around bg-slate-950 text-white p-9 mt-24">
+    <div class="flex flex-row justify-around">
+        <span class="flex flex-col w-40">
+            <img src="img/cafe.png" alt="Cafeteria Logo" class="object-contain justify-self-center" />
+            <p class="font-semibold text-center">Te ofrecemos asesoría, capacitación y envíos gratis.</p>
+        </span>
+   
+        <span class="flex flex-col w-96">
+            <h2 class="font-bold text-center">NUESTRA FILOSOFÍA</h2>
+                <p class="text-white text-sm ml-4 sm:ml-0 text-center m-1">En Cafete-Ría, somos una tienda virtual dedicada a ofrecerte las mejores marcas en máquinas, insumos y accesorios para el café. Nuestro compromiso es brindarte la mejor asesoría, envíos rápidos y capacitaciones gratuitas.</p>
+                <img src="img/webpay.png" alt="" class="object-contain justify-self-center">
+        </span>
+
+        <span class="flex flex-col w-40">
+            <h2 class="font-bold text-center">DATOS DE CONTACTO</h2>
+            <ul class="text-white flex flex-col items-center gap-4 sm:gap-6 mt-2">
+                <li class="text-sm text-center">Building Number: 60</li>
+                <li class="text-sm text-center">Street Address: A-Block, Near Cross River Mall</li>
+                <li class="text-sm text-center">State: Delhi</li>
+                <li class="text-sm text-center">City: New Delhi</li>
+            </ul>
+        </span>
+
+    </div>
+
+    <div class="flex flex-row justify-center">
+        <a class="fa-brands fa-instagram text-3xl hover:text-rose-800 hover:text-4xl transition m-1" href="#" id="iconoUsuario"></a>
+        <a class="fa-brands fa-whatsapp text-3xl hover:text-rose-800 hover:text-4xl transition m-1" href="#" id="iconoUsuario"></a>
+        <a class="fa-brands fa-tiktok text-2xl hover:text-rose-800 hover:text-4xl transition m-1" href="#" id="iconoUsuario"></a>
+    </div>
+
+</footer>     
 
 </body>
 </html>
