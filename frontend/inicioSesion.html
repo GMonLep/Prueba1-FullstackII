@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafete-Ría</title>
+    <link rel="shortcut icon" href="img/cafe.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Link a los iconos de FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+</head>
+<body class="bg-white">
+
+<nav class="flex bg-slate-900 shadow-xl text-white">
+    <div class="flex flex-col sm:flex-row items-center sm:items-baseline justify-between w-full px-4 py-2">
+
+        <div class="flex items-center sm:ml-4">
+            <img src="img/cafe.png" alt="Cafeteria Logo" class="h-20" />
+            <a href="index.html" class="text-white text-2xl font-bold ml-4 sm:ml-0">CAFETE-RÍA</a>
+        </div>
+
+        <div class="flex justify-center items-center w-full sm:w-auto m-5 w-64">
+            <ul class="text-white text-lg font-semibold flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                <li><a class="hover:text-rose-800 hover:text-xl transition" href="index.html">INICIO</a></li>
+                <li><a class="hover:text-rose-800 hover:text-xl transition" href="nosotros.html">NOSOTROS</a></li>
+                <li><a class="hover:text-rose-800 hover:text-xl transition" href="blog.html">BLOG</a></li>
+                <li><a class="hover:text-rose-800 hover:text-xl transition" href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="flex justify-around items-center w-full sm:w-auto">
+            <ul class="text-white text-lg font-semibold flex flex-col sm:flex-row items-center">
+                <li class="sm:order-last">
+                    <a class="fa-solid fa-user text-3xl hover:text-rose-800 hover:text-4xl transition px-5" href="inicioSesion.html" id="iconoUsuario"></a>
+                    <a class="fa-solid fa-cart-arrow-down text-3xl hover:text-rose-800 hover:text-4xl transition px-5"  href="carrito.html" id="iconoCarrito"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="flex items-center justify-center min-h-screen">
+    <form id="loginForm" class="bg-white p-8 rounded-lg shadow-xl w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-3 text-center text-gray-800 flex items-center justify-center space-x-2">
+            <i class="fas fa-sign-in-alt text-rose-700"></i>
+            <span>Iniciar Sesión</span>
+        </h2>
+        <input id="correo" type="email" placeholder="Correo electrónico" required
+               class="w-full mb-3 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input id="contrasena" type="password" placeholder="Contraseña" required
+               class="w-full mb-4 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+        <button type="submit"
+                class="w-full bg-rose-700 text-white py-2 rounded  hover:bg-rose-600 transition-colors duration-300">
+            <i class="fas fa-unlock-alt mr-2"></i>Entrar
+        </button>
+
+        <div class="mt-4 flex justify-between text-sm">
+            <a href="#" class="text-blue-900 hover:underline">¿Olvidaste tu contraseña?</a>
+            <a href="registro.html" class="text-blue-900 hover:underline">Registrarse</a>
+        </div>
+
+        <p id="mensaje" class="mt-4 text-center text-red-600"></p>
+    </form>
+</div>
+
+
+
+
+<footer class="flex flex-col justify-around bg-slate-950 text-white p-9 mt-12">
+    <div class="flex flex-row justify-around">
+        <span class="flex flex-col w-40">
+            <img src="img/cafe.png" alt="Cafeteria Logo" class="object-contain justify-self-center" />
+            <p class="font-semibold text-center">Te ofrecemos asesoría, capacitación y envíos gratis.</p>
+        </span>
+   
+        <span class="flex flex-col w-96">
+            <h2 class="font-bold text-center">NUESTRA FILOSOFÍA</h2>
+                <p class="text-white text-sm ml-4 sm:ml-0 text-center m-1">En Cafete-Ría, somos una tienda virtual dedicada a ofrecerte las mejores marcas en máquinas, insumos y accesorios para el café. Nuestro compromiso es brindarte la mejor asesoría, envíos rápidos y capacitaciones gratuitas.</p>
+                <img src="img/webpay.png" alt="" class="object-contain justify-self-center">
+        </span>
+
+        <span class="flex flex-col w-40">
+            <h2 class="font-bold text-center">DATOS DE CONTACTO</h2>
+            <ul class="text-white flex flex-col items-center gap-4 sm:gap-6 mt-2">
+                <li class="text-sm text-center">Building Number: 60</li>
+                <li class="text-sm text-center">Street Address: A-Block, Near Cross River Mall</li>
+                <li class="text-sm text-center">State: Delhi</li>
+                <li class="text-sm text-center">City: New Delhi</li>
+            </ul>
+        </span>
+
+    </div>
+
+    <div class="flex flex-row justify-center">
+        <a class="fa-brands fa-instagram text-3xl hover:text-rose-800 hover:text-4xl transition m-1" href="#" id="iconoUsuario"></a>
+        <a class="fa-brands fa-whatsapp text-3xl hover:text-rose-800 hover:text-4xl transition m-1" href="#" id="iconoUsuario"></a>
+        <a class="fa-brands fa-tiktok text-2xl hover:text-rose-800 hover:text-4xl transition m-1" href="#" id="iconoUsuario"></a>
+    </div>
+
+</footer>     
+
+</body>
+</html>

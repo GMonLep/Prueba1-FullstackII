@@ -42,61 +42,28 @@
     </div>
 </nav>
 
+<div class="flex items-center justify-center min-h-screen">
+  <form id="registroFormulario" class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800 flex items-center justify-center space-x-2">
+      <span>Contáctanos</span>
+    </h2>
+    <input id="nombre" type="text" placeholder="Nombre Completo" required
+           class="w-full mb-3 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    <input id="correo" type="email" placeholder="Correo electrónico" required
+           class="w-full mb-3 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    <textarea id="contrasena" type="text" placeholder="Escriba su consulta." required
+           class="w-full mb-4 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
 
-<div class="flex flex-col lg:flex-row items-center lg:content-evenly  bg-gray-300 bg-opacity-25 p-5 ">
-    <span class=" text-center lg:ml-32">
-        <h2 class="text-slate-900 text-3xl lg:text-4xl  font-bold lg:ml-4 lg:ml-0 mb-2 lg:mr-12">CAFETE-RÍA</h2>
-    <p class="lg:mr-12">Ofrecemos planes mensuales que incluyen el arriendo de máquinas y suministros. Desde máquinas automáticas hasta profesionales mecánicas, tenemos lo que necesitas para tu negocio o para disfrutar en casa.
-        Compra máquinas nuevas de café, cremeras (postres) y chocolateras directamente del importador al cliente. Trabajamos con marcas reconocidas como Gaggia, Saeco, Cunill, Bunn, y West Bend.
-    </p>
-    <button class="bg-rose-700 hover:bg-rose-600 text-white font-bold py-2 px-7 rounded-full center mt-7 lg:mr-12">COMPRA AL POR MAYOR</button></span>
-    <img class="w-64 object-center lg:w-96 lg:mr-32 " src="/img/cafe1.jpg" alt="">
+    <button type="submit"
+            class="w-full bg-rose-700 text-white py-2 rounded hover:bg-rose-600  transition-colors duration-300">
+      Enviar
+    </button>
+
+    <p id="mensaje" class="mt-4 text-center text-red-600"></p>
+  </form>
 </div>
 
-<span>
-    <h2 class="text-slate-900 text-3xl lg:text-4xl font-bold text-center lg:mb-6 bg-gray-300 bg-opacity-20 p-9">NUESTROS PRODUCTOS DESTACADOS</h2>
-</span>
-
-<section class="grid grid-rows-1 lg:grid-cols-3 lg:content-evenly justify-items-center ">
-        
-    <div class="flex flex-col content-evenly bg-gray-300 bg-opacity-25 p-7 rounded-xl w-96 h-auto">
-    <span class=" text-center">
-        <h2 class="text-slate-900 text-xl font-bold ml-4 lg:ml-0 mb-2">CAFÉ NESCAFÉ TRADICIONAL</h2>
-        <h3 class="text-rose-700 text-lg font-bold ml-4 lg:ml-0 mb-2">$7.990</h2>
-    <p class="text-sm mb-5">Cada taza de NESCAFÉ® Tradición es el resultado de una meticulosa combinación de granos de alta calidad de Arabica y Robusta, obtenidos de manera responsable. El tostado medio oscuro le otorga un sabor equilibrado y con cuerpo, lo que lo convierte en una opción deliciosamente especial para comenzar tu día con energía.</p>
-    </span>
-    <img class="object-scale-down justify-self-center" src="img/nescafe.jpeg" alt="">
-    <button class="bg-rose-700 hover:bg-rose-600 text-white font-bold py-2 px-7 rounded-full center ">AGREGAR AL CARRO</button>
-    </div>
-
-    <div class="flex flex-col content-evenly bg-gray-300 bg-opacity-25 p-7 rounded-xl w-96 h-auto">
-    <span class=" text-center">
-        <h2 class="text-slate-900 text-xl font-bold ml-4 lg:ml-0 mb-2">MÁQUINA CAFÉ PHILLIPS</h2>
-        <h3 class="text-rose-700 text-lg font-bold ml-4 lg:ml-0 mb-2">$27.990</h2>
-    <p class="text-sm mb-5">La cafetera de émbolo o cafetera francesa, también conocida como prensa francesa o cafetera de pistón, consiste en un cilindro de cristal donde se coloca el café molido sobre el que se vierte el agua hirviendo. Tras remover y deja reposar unos minutos se baja el pistón o émbolo y el café queda listo para consumir. Ya no es necesario filtrar debido a que el émbolo tiene un fltro que atrapa las partículas de café.</p>
-    </span>
-    <img class="object-scale-down justify-self-center" src="img/maquinacafe.webp" alt="">
-    <button class="bg-rose-700 hover:bg-rose-600 text-white font-bold py-2 px-7 rounded-full center ">AGREGAR AL CARRO</button>
-    </div>
-
-    <div class="flex flex-col content-evenly bg-gray-300 bg-opacity-25 p-7 rounded-xl w-96 h-auto">
-    <span class=" text-center">
-        <h2 class="text-slate-900 text-xl font-bold ml-4 lg:ml-0 mb-2">CHOCOLATE LA AURORA</h2>
-        <h3 class="text-rose-700 text-lg font-bold ml-4 lg:ml-0 mb-2">$9.990</h2>
-    <p class="text-sm mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo sapiente labore tenetur ipsum voluptates, eos ducimus dolores dolorum doloremque? Et, aut alias harum voluptates asperiores mollitia aperiam minus veritatis!</p>
-    </span>
-    <img class="object-scale-down justify-self-center" src="img/chocolatepaquete.png" alt="">
-    <button class="bg-rose-700 hover:bg-rose-600 text-white font-bold py-2 px-7 rounded-full center ">AGREGAR AL CARRO</button>
-    </div>
-
-
-
-</section>
-
-
-
-
-<footer class="flex flex-col justify-around bg-slate-950 text-white p-9 mt-24">
+<footer class="flex flex-col justify-around bg-slate-950 text-white p-9 mt-12">
     <div class="flex flex-row justify-around">
         <span class="flex flex-col w-40">
             <img src="img/cafe.png" alt="Cafeteria Logo" class="object-contain justify-self-center" />
